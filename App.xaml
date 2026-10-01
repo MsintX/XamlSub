@@ -1,0 +1,56 @@
+<Application
+    x:Class="XamlSub.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+            </ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="DesignerPageBackgroundBrush" Color="#FFF7F7F7" />
+                    <SolidColorBrush x:Key="DesignerCardBackgroundBrush" Color="#FFFFFFFF" />
+                    <SolidColorBrush x:Key="DesignerCardStrokeBrush" Color="#1F000000" />
+                    <SolidColorBrush x:Key="DesignerAccentBrush" Color="#0067C0" />
+                    <SolidColorBrush x:Key="DesignerCanvasBackgroundBrush" Color="#FFF1F1F1" />
+                    <SolidColorBrush x:Key="DesignerCanvasGridBrush" Color="#1F000000" />
+                    <SolidColorBrush x:Key="DesignerControlBackgroundBrush" Color="#FFFFFFFF" />
+                    <SolidColorBrush x:Key="DesignerControlBorderBrush" Color="#22000000" />
+                    <SolidColorBrush x:Key="DesignerControlSelectedBrush" Color="#E8F4FF" />
+                    <SolidColorBrush x:Key="DesignerControlSelectedBorderBrush" Color="#0067C0" />
+                    <SolidColorBrush x:Key="DesignerPreviewSurfaceBrush" Color="#F4F4F4" />
+                    <SolidColorBrush x:Key="DesignerTitleBarBrush" Color="#FFFDFDFD" />
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="DesignerPageBackgroundBrush" Color="#FF202020" />
+                    <SolidColorBrush x:Key="DesignerCardBackgroundBrush" Color="#FF2B2B2B" />
+                    <SolidColorBrush x:Key="DesignerCardStrokeBrush" Color="#33FFFFFF" />
+                    <SolidColorBrush x:Key="DesignerAccentBrush" Color="#60CDFF" />
+                    <SolidColorBrush x:Key="DesignerCanvasBackgroundBrush" Color="#FF1B1B1B" />
+                    <SolidColorBrush x:Key="DesignerCanvasGridBrush" Color="#33FFFFFF" />
+                    <SolidColorBrush x:Key="DesignerControlBackgroundBrush" Color="#FF292929" />
+                    <SolidColorBrush x:Key="DesignerControlBorderBrush" Color="#4AFFFFFF" />
+                    <SolidColorBrush x:Key="DesignerControlSelectedBrush" Color="#233C55" />
+                    <SolidColorBrush x:Key="DesignerControlSelectedBorderBrush" Color="#60CDFF" />
+                    <SolidColorBrush x:Key="DesignerPreviewSurfaceBrush" Color="#FF353535" />
+                    <SolidColorBrush x:Key="DesignerTitleBarBrush" Color="#FF292929" />
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="HighContrast">
+                    <SolidColorBrush x:Key="DesignerPageBackgroundBrush" Color="#FF000000" />
+                    <SolidColorBrush x:Key="DesignerCardBackgroundBrush" Color="#FF000000" />
+                    <SolidColorBrush x:Key="DesignerCardStrokeBrush" Color="#FFFFFFFF" />
+                    <SolidColorBrush x:Key="DesignerAccentBrush" Color="#FF0067C0" />
+                    <SolidColorBrush x:Key="DesignerCanvasBackgroundBrush" Color="#FF000000" />
+                    <SolidColorBrush x:Key="DesignerCanvasGridBrush" Color="#FFFFFFFF" />
+                    <SolidColorBrush x:Key="DesignerControlBackgroundBrush" Color="#FF000000" />
+                    <SolidColorBrush x:Key="DesignerControlBorderBrush" Color="#FFFFFFFF" />
+                    <SolidColorBrush x:Key="DesignerControlSelectedBrush" Color="#FF0067C0" />
+                    <SolidColorBrush x:Key="DesignerControlSelectedBorderBrush" Color="#FFFFFFFF" />
+                    <SolidColorBrush x:Key="DesignerPreviewSurfaceBrush" Color="#FF000000" />
+                    <SolidColorBrush x:Key="DesignerTitleBarBrush" Color="#FF000000" />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
