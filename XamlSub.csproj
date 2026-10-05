@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>XamlSub</RootNamespace>
+    <AssemblyName>XamlSub</AssemblyName>
+    <Product>XAML Sub</Product>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x64</Platforms>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <PublishProfile>Properties\PublishProfiles\win10-$(Platform).pubxml</PublishProfile>
+    <UseWinUI>true</UseWinUI>
+
+    <!-- Single-project MSIX / Packaged WinUI 3 -->
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <WindowsPackageType>MSIX</WindowsPackageType>
+    <AppxPackage>true</AppxPackage>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <AppxBundle>Never</AppxBundle>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <GenerateTestArtifacts>true</GenerateTestArtifacts>
+    <GenerateAppInstallerFile>false</GenerateAppInstallerFile>
+    <AppxAutoIncrementPackageRevision>false</AppxAutoIncrementPackageRevision>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <PackageCertificateKeyFile>MSIXBuilder-Development.pfx</PackageCertificateKeyFile>
+
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+
+    <!-- Keep the XAML compiler's design-time saved-state file separate from a real build.
+         Visual Studio can run design-time XAML compilation while a normal build is compiling,
+         and sharing XamlSaveStateFile.xml can cause a transient file-lock failure. -->
+    <XamlSavedStateFileName Condition="'$(DesignTimeBuild)' == 'true'">XamlSaveStateFile.$(Configuration).$(Platform).DesignTime.xml</XamlSavedStateFileName>
+    <PackageCertificateThumbprint>7976B0BDFA57D9D957E7D6FB3A956E2E34DE868B</PackageCertificateThumbprint>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="Assets\*.png" />
+    <None Include="XamlSub_TemporaryKey.pfx" />
+    <None Include="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(EnableMsixTooling)' == 'true'">
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(EnableMsixTooling)' == 'true'">
+    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.5.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.9.0" />
+  </ItemGroup>
+</Project>
