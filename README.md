@@ -6,13 +6,14 @@
 
 # XAML Sub
 
-![[GitHub release (latest by date)](https://img.shields.io/github/v/release/MsintX/XamlSub)](https://github.com/MsintX/XamlSub/releases) ![GitHub Release Date](https://img.shields.io/github/release-date/MsintX/XamlSub)
-![GitHub All Releases](https://img.shields.io/github/downloads/MsintX/XamlSub/total)
-![GitHub stars](https://img.shields.io/github/stars/MsintX/XamlSub?style=flat)
-![GitHub forks](https://img.shields.io/github/forks/MsintX/XamlSub)
-![GitHub issues](https://img.shields.io/github/issues/MsintX/XamlSub)
-![GitHub license](https://img.shields.io/github/license/MsintX/XamlSub)
-![GitHub last commit](https://img.shields.io/github/last-commit/MsintX/XamlSub)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/MsintX/XamlSub?style=flat)](https://github.com/MsintX/XamlSub/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/MsintX/XamlSub?style=flat)](https://github.com/MsintX/XamlSub/releases)
+[![GitHub All Releases](https://img.shields.io/github/downloads/MsintX/XamlSub/total?style=flat)](https://github.com/MsintX/XamlSub/releases)
+[![GitHub stars](https://img.shields.io/github/stars/MsintX/XamlSub?style=flat)](https://github.com/MsintX/XamlSub/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/MsintX/XamlSub?style=flat)](https://github.com/MsintX/XamlSub/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/MsintX/XamlSub?style=flat)](https://github.com/MsintX/XamlSub/issues)
+[![GitHub license](https://img.shields.io/github/license/MsintX/XamlSub?style=flat)](https://github.com/MsintX/XamlSub/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/MsintX/XamlSub?style=flat)](https://github.com/MsintX/XamlSub/commits)
 
 `XAML Sub` 是一个独立于 Visual Studio 的轻量级 WinUI XAML 可视化编辑器。
 
