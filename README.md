@@ -6,7 +6,7 @@
 
 # XAML Sub
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/MsintX/XamlSub)](https://github.com/MsintX/XamlSub/releases) ![GitHub Release Date](https://img.shields.io/github/release-date/MsintX/XamlSub)
+![[GitHub release (latest by date)](https://img.shields.io/github/v/release/MsintX/XamlSub)](https://github.com/MsintX/XamlSub/releases) ![GitHub Release Date](https://img.shields.io/github/release-date/MsintX/XamlSub)
 ![GitHub All Releases](https://img.shields.io/github/downloads/MsintX/XamlSub/total)
 ![GitHub stars](https://img.shields.io/github/stars/MsintX/XamlSub?style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/MsintX/XamlSub)
